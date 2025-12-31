@@ -1,7 +1,7 @@
 // mockKioskData.ts
 export const kioskQueueMock = {
   queueId: "admin-doc-verification",
-  queueName: "Admin Office – Document Verification",
+  queueName: "Admin Office - Document Verification",
   location: "Ground Floor, Block A",
 
   nowServing: {
