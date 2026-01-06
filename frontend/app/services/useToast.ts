@@ -10,34 +10,34 @@ export const useQueueToasts = (status: QueueStatus) => {
     switch (status) {
       case "waiting":
         toast(`You’re in the queue. Sit back and relax.`, {
-          icon: "⏳",
+
           duration: 3000,
         });
         break;
 
       case "near":
         toast.warning(`You’re next! Please stay nearby.`, {
-          icon: "⚠️",
+         
           duration: 4000,
         });
         break;
 
       case "served":
-        toast.success(`You’ve been served! 🎉`, {
-          icon: "✅",
+        toast.success(`You’ve been served! `, {
+
           duration: 4000,
         });
         break;
 
       case "cancelled":
-        toast.error(`You left the queue ❌`, {
-          icon: "❌",
+        toast.error(`You left the queue `, {
+
           duration: 4000,
         });
         break;
 
       case "no-queue":
-        // no toast needed
+
         break;
     }
   }, [status]);
